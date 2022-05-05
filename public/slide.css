@@ -1,0 +1,48 @@
+body {
+    background-color: #f0f0f0;
+    overflow: hidden;
+}
+
+#slide-top, #slide-bottom {
+    border-radius: 16px;
+    background-color: #2b2b2b;
+    width: 100vw;
+    position: absolute;
+    height: 500px;
+    box-shadow: 0px 0px 32px #000000b8;
+    animation: 30s ease-in-out infinite;
+}
+
+#slide-top {
+    transform: rotate(-5deg);
+    top: -400px;
+    left: -75px;
+    animation-name: rot-top;
+}
+
+#slide-bottom {
+    transform: rotate(2deg);
+    bottom: -460px;
+    right: -700px;
+    animation-name: rot-bot;
+}
+
+@keyframes rot-top {
+    0%, 100% {
+        transform: rotate(-5deg);
+    }
+
+    50% {
+        transform: rotate(-10deg);
+    }
+}
+
+@keyframes rot-bot {
+    0%, 100% {
+        transform: rotate(2deg);
+    }
+
+    50% {
+        transform: rotate(10deg);
+    }
+}
