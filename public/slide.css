@@ -11,6 +11,7 @@ body {
     height: 500px;
     box-shadow: 0px 0px 32px #000000b8;
     animation: 30s ease-in-out infinite;
+    z-index: 1;
 }
 
 #slide-top {
@@ -45,4 +46,16 @@ body {
     50% {
         transform: rotate(10deg);
     }
+}
+
+main {
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 0;
 }
